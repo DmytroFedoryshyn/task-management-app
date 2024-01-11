@@ -1,0 +1,49 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-tasks-table
+      author: Dmytro
+
+      changes:
+        - createTable:
+            tableName: tasks
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: description
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: priority
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: due_date
+                  type: DATE
+                  constraints:
+                    nullable: false
+              - column:
+                  name: project_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_task_project
+                    references: projects(id)
+                    onDelete: CASCADE
+              - column:
+                  name: assignee_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_task_assignee
+                    references: users(id)
+                    onDelete: CASCADE
