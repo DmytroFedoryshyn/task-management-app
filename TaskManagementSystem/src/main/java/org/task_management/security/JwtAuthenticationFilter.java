@@ -1,4 +1,4 @@
-package org.taskmanagement.security;
+package org.task_management.security;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

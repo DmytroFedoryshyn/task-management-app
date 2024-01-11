@@ -1,4 +1,4 @@
-package org.taskmanagement.dto;
+package org.task_management.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

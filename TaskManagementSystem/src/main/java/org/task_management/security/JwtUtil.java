@@ -1,4 +1,4 @@
-package org.taskmanagement.security;
+package org.task_management.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;

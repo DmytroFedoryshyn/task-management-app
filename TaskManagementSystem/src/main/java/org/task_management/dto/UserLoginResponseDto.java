@@ -1,4 +1,4 @@
-package org.taskmanagement.dto;
+package org.task_management.dto;
 
 import lombok.Data;
 

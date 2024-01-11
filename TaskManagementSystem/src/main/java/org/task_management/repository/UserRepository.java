@@ -1,4 +1,4 @@
-package org.taskmanagement.repository;
+package org.task_management.repository;
 
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
