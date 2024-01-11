@@ -1,12 +1,12 @@
-package org.taskmanagement.security;
+package org.task_management.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
-import org.taskmanagement.dto.UserLoginRequestDto;
-import org.taskmanagement.dto.UserLoginResponseDto;
+import org.task_management.dto.UserLoginRequestDto;
+import org.task_management.dto.UserLoginResponseDto;
 
 @Service
 @RequiredArgsConstructor
