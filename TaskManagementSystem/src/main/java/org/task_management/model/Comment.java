@@ -1,4 +1,4 @@
-package org.task_management.model;
+package org.taskmanagement.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
