@@ -1,4 +1,4 @@
-package org.task_management.security;
+package org.taskmanagement.security;
 
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
@@ -7,7 +7,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import org.task_management.repository.UserRepository;
+import org.taskmanagement.repository.UserRepository;
 
 @Service
 @RequiredArgsConstructor

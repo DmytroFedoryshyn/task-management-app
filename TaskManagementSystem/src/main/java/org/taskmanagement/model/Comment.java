@@ -1,5 +1,6 @@
-package org.task_management.model;
+package org.taskmanagement.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,15 +15,19 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "attachments")
-public class Attachment {
+@Table(name = "comments")
+public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
     @JoinColumn(name = "task_id", nullable = false)
     private Task task;
-    private String dropboxFileId;
-    private String filename;
-    private LocalDateTime uploadDate;
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
+    @Column(nullable = false)
+    private String text;
+    @Column(nullable = false)
+    private LocalDateTime timestamp;
 }
