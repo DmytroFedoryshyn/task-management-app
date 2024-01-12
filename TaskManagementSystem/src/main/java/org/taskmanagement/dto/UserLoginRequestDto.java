@@ -7,8 +7,9 @@ import lombok.Data;
 
 @Data
 public class UserLoginRequestDto {
-    @Email
-    private String email;
+    @NotBlank
+    @Size(min = 3, max = 50)
+    private String username;
     @NotBlank
     @Size(min = 6, max = 50)
     private String password;

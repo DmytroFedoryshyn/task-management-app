@@ -32,7 +32,7 @@ public class Project {
     @Enumerated(EnumType.STRING)
     private Status status;
 
-    private enum Status {
+    public enum Status {
         INITIATED, IN_PROGRESS, COMPLETED
     }
 }
