@@ -39,11 +39,11 @@ public class Task {
     @JoinColumn(name = "assignee_id", nullable = false)
     private User assignee;
 
-    private enum Priority {
+    public enum Priority {
         LOW, MEDIUM, HIGH
     }
 
-    private enum Status {
+    public enum Status {
         NOT_STARTED, IN_PROGRESS, COMPLETED
     }
 }
